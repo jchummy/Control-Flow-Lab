@@ -1,0 +1,13 @@
+var securityQuestions = [ 
+{question: "What was your first pets name?", expectedAnswer: "CottonBall"},
+{question: "What high school did you attend?", expectedAnswer: "NMHS"},
+{question: "What year were you born?", expectedAnswer:"1991"}]
+
+for (var i = 0; i < securityQuestions.length; i++) {
+    var response =prompt(securityQuestions[i]["question"])
+    console.log(response)
+    if (securityQuestions[i]["expectedAnswer"]!==response){
+        console.log("not a match")
+        break
+    }
+}

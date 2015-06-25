@@ -1,0 +1,13 @@
+var userLogin = {
+   userName: "GAStudent",
+   password: "snippet2"
+}
+var password;
+
+password = prompt("what is your password?");
+if (password === userLogin["password"]){
+   console.log("Passwords Match!")
+}
+else {
+   console.log("Password's don't match")
+}
